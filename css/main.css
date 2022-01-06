@@ -1,0 +1,151 @@
+/* 메인페이지 css */
+
+.bodywrap section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* 메인 이미지 슬라이드 영역(section1) */
+.main-slide .img-wrap a {
+  display: block;
+  width: 100%;
+  height: 1000px;
+  overflow: hidden;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.main-slide .img-wrap a.slide01 {
+  background-image: url(../img/slide/slide01_pc.jpg);
+}
+.main-slide .img-wrap a.slide02 {
+  background-image: url(../img/slide/slide02_pc.jpg);
+}
+
+.main-slide .btn-wrap {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  width: 250px;
+  height: 55px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  border-radius: 30px;
+}
+/* 스와이퍼 버튼 */
+.swiper-pagination {
+  color: #999;
+  font-weight: 600;
+  line-height: 35px;
+}
+.swiper-pagination-current {
+  color: #fff;
+  font-weight: 600;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  z-index: 20 !important;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 25px !important;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer !important;
+}
+
+/* MENU STORY 영역(section2) */
+.menu-story > .contents-wrap {
+  width: 100%;
+  max-width: 1200px;
+  /* position: relative; */
+  margin: auto;
+}
+.menu-story h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 98px;
+  font-weight: 900;
+  position: absolute;
+  top: 200px;
+}
+.menu-story .tab-menu {
+  position: absolute;
+  top: 400px;
+}
+.menu-story .tab-menu li {
+  margin: 40px 0;
+}
+.menu-story .tab-menu li:nth-child(1) {
+  margin-top: 0px !important;
+}
+.menu-story .tab-menu li > a {
+  display: block;
+}
+.menu-story .tab-menu li > a > strong {
+  font-family: "Raleway", sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  color: #999;
+}
+.menu-story .tab-menu li.active > a > strong {
+  text-decoration: underline;
+  color: #333;
+}
+.menu-story .tab-menu li > a > span {
+  font-size: 16px;
+  display: block;
+  font-weight: 700;
+  margin-bottom: 15px;
+  opacity: 0;
+}
+.menu-story .tab-menu li.active > a > span {
+  opacity: 1;
+}
+
+.menu-story .tab-content {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+}
+.menu-story .tab-content > div {
+  width: 50%;
+}
+.menu-story .tab-imgbox {
+  width: 100%;
+}
+.menu-story .tb-img {
+  width: 200px;
+  /* margin-left: 15px; */
+}
+.menu-story .tb-img a {
+  display: block;
+}
+.menu-story .tb-img img {
+  width: 100%;
+}
+.menu-story .btn-wrap {
+  position: relative;
+  width: 420px;
+  height: 55px;
+  line-height: 55px;
+  background: #333;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  /* margin: 0 auto; */
+}
+.menu-story .tab-imgbox {
+  align-items: flex-end !important;
+}
+.menu-story .swiper-slide-active {
+  width: 400px !important;
+}
+.black {
+  color: black !important;
+}
+.hide {
+  display: none !important;
+}

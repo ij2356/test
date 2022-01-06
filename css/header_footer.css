@@ -1,0 +1,207 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap");
+
+html,
+body {
+  color: #333;
+  font-family: "Noto Sans KR", sans-serif;
+  /* overflow-x: hidden; */
+}
+
+/* ----- 헤더 시작 ----- */
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  /* 헤더고정 */
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  background-color: transparent;
+}
+header > h1.logo,
+header > h1.logo-black {
+  width: 216px;
+  height: 30px;
+  overflow: hidden;
+  padding: 0 60px;
+}
+header > h1.logo > a {
+  width: 100%;
+  height: 100%;
+  background: url(../img/logo/logo_white.png) no-repeat;
+  background-size: 100%;
+  display: block;
+  text-indent: -99999px;
+  overflow: hidden;
+}
+header > h1.logo-black > a {
+  width: 100%;
+  height: 100%;
+  background: url(../img/logo/logo_black.png) no-repeat;
+  background-size: 100%;
+  display: block;
+  text-indent: -99999px;
+  overflow: hidden;
+}
+header > nav.gnb > ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+header > nav.gnb > ul > li {
+  margin-right: 30px;
+}
+header > nav.gnb > ul > li > a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+header > nav.gnb .submenu {
+  display: none;
+}
+header > nav.gnb .submenu a {
+  font-size: 16px;
+}
+
+header > .MO_menu_btn {
+  width: 24px;
+  height: 24px;
+  padding: 0 60px;
+}
+header > .MO_menu_btn > a {
+  width: 100%;
+  height: 100%;
+  background: url(../img/icon/ico_menu_white.svg) no-repeat;
+  display: block;
+  text-indent: -99999px;
+  overflow: hidden;
+}
+
+/* 모바일용 메뉴 */
+header > .MO_menu_wrap {
+  display: none;
+}
+
+/* ----- 헤더 끝 ----- */
+
+/* ----- 푸터 시작 ----- */
+footer {
+  /* height: 500px; */
+  background-color: #222;
+  color: #fff;
+  padding: 50px 0;
+}
+.footerwrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 50px;
+}
+.footer_top > .ft_left li {
+  margin-top: 25px;
+}
+.footer_top > .ft_left li:first-child {
+  margin-top: 0;
+}
+.footer_top > .ft_left a {
+  font-size: 24px;
+  font-weight: 600;
+}
+.footer_top > .ft_right > div {
+  margin-top: 30px;
+}
+.footer_top > .ft_right > div:first {
+  margin-top: 0;
+}
+.footer_top > .ft_right > div > h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.footer_top > .ft_right > div > p {
+  font-size: 14px;
+  color: #888;
+}
+.footer_top > .ft_right > .cs > p {
+  display: inline-block;
+  margin-right: 15px;
+}
+.footer_top > .ft_right > .cs > p:last-child {
+  margin-right: 0;
+}
+
+.footer_bottom {
+  margin-top: 50px;
+  font-size: 14px;
+}
+.footer_bottom .ft_menu {
+  margin-bottom: 20px;
+}
+.footer_bottom .ft_menu > ul {
+  display: flex;
+}
+.footer_bottom .ft_menu > ul > li {
+  margin-right: 40px;
+}
+.footer_bottom .ft_menu > ul > li > a {
+  font-weight: 600;
+}
+.footer_bottom .ft_info {
+  color: #888;
+  margin-bottom: 15px;
+}
+.footer_bottom .ft_info > div {
+  display: flex;
+  line-height: 25px;
+}
+.footer_bottom .ft_info > div > p {
+  margin-right: 20px;
+}
+.footer_bottom .ft_info > div > p::after {
+  content: "|";
+  margin-left: 20px;
+}
+.footer_bottom .copy {
+  font-size: 12px;
+  color: #888;
+  display: flex;
+  margin-bottom: 20px;
+}
+.footer_bottom .ft_sns > .ico_sns {
+  text-align: right;
+}
+.footer_bottom .ft_sns li {
+  display: inline-block;
+  margin-left: 10px;
+}
+.footer_bottom .ft_sns a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #888;
+  border-radius: 50%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.footer_bottom .ft_sns li:nth-child(3) a {
+  line-height: 28px;
+}
+.footer_bottom .ft_sns a > i {
+  font-size: 15px;
+  color: #888;
+}
+.footer_bottom .ft_sns li:nth-child(2) i {
+  font-size: 18px;
+}
+
+/* ----- 푸터 끝 ----- */
